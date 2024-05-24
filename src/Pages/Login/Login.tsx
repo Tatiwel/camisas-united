@@ -1,4 +1,4 @@
-function Cadastro() {
+function Login() {
     return(
     <>
     <div>
@@ -8,4 +8,4 @@ function Cadastro() {
     )
 }
 
-export default Cadastro
+export default Login
