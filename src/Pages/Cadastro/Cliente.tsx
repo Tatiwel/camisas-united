@@ -1,19 +1,21 @@
-import { useState } from "react";
+// src/CadastroCliente.tsx
+import React, { useState } from "react";
 
-const CadastroCliente = () => {
+const CadastroCliente: React.FC = () => {
   const [formData, setFormData] = useState({
-    Nome: "",
-    email: "",
-    Senha: "",
-    Endereco: "",
-    Cidade: "",
-    Estado: "",
-    Codigo_Postal: "",
-    Pais: "",
-    Telefone: "",
+    customerID: "",
+    companyName: "",
+    contactName: "",
+    contactTitle: "",
+    address: "",
+    city: "",
+    region: "",
+    postalCode: "",
+    country: "",
+    phone: "",
   });
 
-  const handleChange = (e: { target: { name: string; value: unknown } }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -21,9 +23,9 @@ const CadastroCliente = () => {
     });
   };
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+    console.log("Dados do Cliente:", formData);
     // Aqui você pode adicionar a lógica para enviar os dados para um backend
   };
 
@@ -35,31 +37,43 @@ const CadastroCliente = () => {
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Nome:</label>
+            <label className="block text-gray-700 mb-2">ID do Cliente:</label>
             <input
               type="text"
-              name="Nome"
-              value={formData.Nome}
+              name="customerID"
+              value={formData.customerID}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">E-mail:</label>
+            <label className="block text-gray-700 mb-2">Nome da Empresa:</label>
             <input
               type="text"
-              name="email"
-              value={formData.email}
+              name="companyName"
+              value={formData.companyName}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Senha:</label>
+            <label className="block text-gray-700 mb-2">Nome do Contato:</label>
             <input
               type="text"
-              name="Senha"
-              value={formData.Senha}
+              name="contactName"
+              value={formData.contactName}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700 mb-2">
+              Título do Contato:
+            </label>
+            <input
+              type="text"
+              name="contactTitle"
+              value={formData.contactTitle}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
@@ -68,8 +82,8 @@ const CadastroCliente = () => {
             <label className="block text-gray-700 mb-2">Endereço:</label>
             <input
               type="text"
-              name="Endereco"
-              value={formData.Endereco}
+              name="address"
+              value={formData.address}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
@@ -78,38 +92,38 @@ const CadastroCliente = () => {
             <label className="block text-gray-700 mb-2">Cidade:</label>
             <input
               type="text"
-              name="Cidade"
-              value={formData.Cidade}
+              name="city"
+              value={formData.city}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Estado:</label>
+            <label className="block text-gray-700 mb-2">Região:</label>
             <input
               type="text"
-              name="Estado"
-              value={formData.Estado}
+              name="region"
+              value={formData.region}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Codigo Postal:</label>
+            <label className="block text-gray-700 mb-2">Código Postal:</label>
             <input
               type="text"
-              name="Codigo_Postal"
-              value={formData.Codigo_Postal}
+              name="postalCode"
+              value={formData.postalCode}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Pais:</label>
+            <label className="block text-gray-700 mb-2">País:</label>
             <input
               type="text"
-              name="Pais"
-              value={formData.Pais}
+              name="country"
+              value={formData.country}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
@@ -118,8 +132,8 @@ const CadastroCliente = () => {
             <label className="block text-gray-700 mb-2">Telefone:</label>
             <input
               type="text"
-              name="Telefone"
-              value={formData.Telefone}
+              name="phone"
+              value={formData.phone}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
