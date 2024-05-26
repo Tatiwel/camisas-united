@@ -7,19 +7,23 @@ import Categoria from "./src/Pages/Cadastro/Categoria.tsx";
 import Fornecedor from "./src/Pages/Produto/Fornecedor.tsx";
 import CadastroProduto from "./src/Pages/Produto/CadastroProduto.tsx";
 import Error from "./src/Pages/Erros/Error.tsx";
+import Admin from "./src/Pages/Admin/Admin.tsx";
+import Carrinho from "./src/Pages/Carrinho/Carrinho.tsx";
 
 const RoutesComponent: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Error/>} /> //daniel fez isso aq
+        <Route path="*" element={<Error/>} /> //Helder fez isso aq
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
-        <Route path="/cadastro-funcionario" element={<CadastroFuncionario />} /> //aq tb
-        <Route path="/categoria" element={<Categoria />} /> // aq tb
-        <Route path="/fornecedor" element={<Fornecedor />} /> // aq tb
-        <Route path="/cadastro-produto" element={<CadastroProduto />} /> // aq tb
+        <Route path="/cadastro-funcionario" element={<CadastroFuncionario />} /> 
+        <Route path="/cadastro-categoria" element={<Categoria />} />
+        <Route path="/cadastro-fornecedor" element={<Fornecedor />} />
+        <Route path="/cadastro-produto" element={<CadastroProduto />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/carrinho" element={<Carrinho />} />
       </Routes>
     </BrowserRouter>
   );

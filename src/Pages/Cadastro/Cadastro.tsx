@@ -27,28 +27,39 @@ const CadastroCliente = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-5">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <div className="min-h-screen flex items-center justify-center bg-gray-700 p-5">
+      <div className="bg-gray-100 p-8 rounded shadow-md w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center">
           Cadastro de Cliente
         </h2>
         <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+          <div className="grid grid-cols-2 gap-4">
+          <div className="mb-4 col-span-2">
             <label className="block text-gray-700 mb-2">Nome:</label>
             <input
               type="text"
               name="Nome"
               value={formData.Nome}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded"
+              className="w-full px-3 py-2 border rounded "
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 col-span-2">
             <label className="block text-gray-700 mb-2">E-mail:</label>
             <input
               type="text"
               name="email"
               value={formData.email}
+              onChange={handleChange}
+              className="w-full px-3 py-2 border rounded"
+            />
+          </div>
+          <div className="mb-4 col-span-2">
+            <label className="block text-gray-700 mb-2">Endereço:</label>
+            <input
+              type="text"
+              name="Endereco"
+              value={formData.Endereco}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
@@ -59,16 +70,6 @@ const CadastroCliente = () => {
               type="text"
               name="Senha"
               value={formData.Senha}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Endereço:</label>
-            <input
-              type="text"
-              name="Endereco"
-              value={formData.Endereco}
               onChange={handleChange}
               className="w-full px-3 py-2 border rounded"
             />
@@ -123,9 +124,10 @@ const CadastroCliente = () => {
               className="w-full px-3 py-2 border rounded"
             />
           </div>
+          </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded "
           >
             Cadastrar
           </button>
