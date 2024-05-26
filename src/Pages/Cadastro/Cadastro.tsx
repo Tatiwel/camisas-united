@@ -24,7 +24,6 @@ const CadastroCliente = () => {
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    // Aqui você pode adicionar a lógica para enviar os dados para um backend
   };
 
   return (

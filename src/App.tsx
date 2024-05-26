@@ -16,7 +16,7 @@ function App() {
             <a href="/Cadastro">Ligas</a>
           </li>
           <li className="text-white pr-4">
-            <a href="/Login">Marcas</a>
+            <a href="">Marcas</a>
           </li>
           <li className="text-white pr-4">
             <a href="">Masculino</a>
@@ -36,7 +36,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="/Login">
                 <img src={perfil} alt="Perfil" className="h-10" />
               </a>
             </li>
