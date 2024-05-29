@@ -9,6 +9,13 @@ import CadastroProduto from "./src/Pages/Produto/CadastroProduto.tsx";
 import Error from "./src/Pages/Erros/Error.tsx";
 import Admin from "./src/Pages/Admin/Admin.tsx";
 import Carrinho from "./src/Pages/Carrinho/Carrinho.tsx";
+import Ligas from "./src/Pages/CamisasFutebol/Liga/Ligas.tsx";
+import LigaDetail from "./src/Pages/CamisasFutebol/Liga/LigaDetail.tsx";
+import Marca from "./src/Pages/CamisasFutebol/Marca/Marca.tsx";
+import MarcaDetail from "./src/Pages/CamisasFutebol/Marca/MarcaDetail.tsx";
+import Masculino from "./src/Pages/CamisasFutebol/Masculino.tsx";
+import Feminino from "./src/Pages/CamisasFutebol/Feminino.tsx";
+import Infantil from "./src/Pages/CamisasFutebol/Infantil.tsx";
 
 const RoutesComponent: React.FC = () => {
   return (
@@ -24,6 +31,13 @@ const RoutesComponent: React.FC = () => {
         <Route path="/cadastro-produto" element={<CadastroProduto />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/ligas" element={<Ligas />} />
+        <Route path="/ligas/:liga" element={<LigaDetail />} />
+        <Route path="/marcas" element={<Marca />} />
+        <Route path="/marcas/:marca" element={<MarcaDetail />} />
+        <Route path="/masculino" element={<Masculino />} />
+        <Route path="/feminino" element={<Feminino />} />
+        <Route path="/infantil" element={<Infantil />} />
       </Routes>
     </BrowserRouter>
   );

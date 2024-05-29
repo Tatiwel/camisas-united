@@ -3,6 +3,7 @@ import perfil from "../Perfil.svg";
 import bag from "../Bag.svg";
 import logo from "../CUnitedLogo.svg";
 import sair from "../sair.png";
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   return (
@@ -15,19 +16,24 @@ const NavBar: React.FC = () => {
         </div>
         <div className="flex items-center">
           <div className="text-white pr-4">
-            <a href="">Ligas</a>
+            <Link to={'/ligas'}>
+            <a href="">Ligas</a></Link>
           </div>
           <div className="text-white pr-4">
-            <a href="">Marcas</a>
+            <Link to={'/marcas'}>
+            <a href="">Marcas</a></Link>
           </div>
           <div className="text-white pr-4">
-            <a href="">Masculino</a>
+          <Link to={'/masculino'}>
+            <a href="">Masculino</a></Link>
           </div>
           <div className="text-white pr-4">
-            <a href="">Feminino</a>
+          <Link to={'/feminino'}>
+            <a href="">Feminino</a></Link>
           </div>
           <div className="text-white">
-            <a href="">Infantil</a>
+          <Link to={'/infantil'}>
+            <a href="">Infantil</a></Link>
           </div>
         </div>
       </div>

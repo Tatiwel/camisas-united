@@ -3,6 +3,7 @@ import reus from "../src/assets/Reus.svg";
 import seta from "../src/assets/Seta.svg";
 import setaBranca from "../src/assets/SetaBranca.svg";
 import NavBar from "../src/assets/Components/NavBar.tsx";
+
 function App() {
   return (
     <div className="bg-gray-900 h-screen w-full font-semibold text-lg">
