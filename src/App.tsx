@@ -12,7 +12,7 @@ function App() {
       <div className="flex justify-between items-center transition-transform transform hover:scale-90">
         <img src={marcelo} alt="Marcelo" />
         <a
-          href=""
+          href="/RealMadrid"
           className="pl-12 text-xl font-semibold flex items-center"
         >
           <h1>
@@ -27,7 +27,7 @@ function App() {
         <div className="flex justify-between items-center transition-transform transform hover:scale-90">
         <img src={reus} alt="reus" className="pl-5 " />
         <a
-          href=""
+          href="/Borussia Dortmund"
           className=" text-white ml-12 text-xl font-semibold flex items-center "
         >
           <h1>

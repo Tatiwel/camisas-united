@@ -17,23 +17,28 @@ const NavBar: React.FC = () => {
         <div className="flex items-center">
           <div className="text-white pr-4">
             <Link to={'/ligas'}>
-            <a href="">Ligas</a></Link>
+              Ligas
+            </Link>
           </div>
           <div className="text-white pr-4">
             <Link to={'/marcas'}>
-            <a href="">Marcas</a></Link>
+              Marcas
+            </Link>
           </div>
           <div className="text-white pr-4">
-          <Link to={'/masculino'}>
-            <a href="">Masculino</a></Link>
+            <Link to={'/masculino'}>
+              Masculino
+            </Link>
           </div>
           <div className="text-white pr-4">
-          <Link to={'/feminino'}>
-            <a href="">Feminino</a></Link>
+            <Link to={'/feminino'}>
+              Feminino
+            </Link>
           </div>
           <div className="text-white">
-          <Link to={'/infantil'}>
-            <a href="">Infantil</a></Link>
+            <Link to={'/infantil'}>
+              Infantil
+            </Link>
           </div>
         </div>
       </div>

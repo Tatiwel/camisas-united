@@ -27,7 +27,7 @@ export const Admin: React.FC = () => {
     <div className="flex bg-gray-700 h-screen w-full justify-center items-center">
       <div className="flex flex-col justify-between items-center rounded-md p-8 bg-gray-300 ">
         <div className="flex items-center mb-8">
-          <h1 className="text-3xl text-center text-white">Admin Page</h1>
+          <h1 className="text-3xl text-center text-black">Admin Page</h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           <Link to="/cadastro-fornecedor"

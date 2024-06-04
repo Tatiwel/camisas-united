@@ -16,6 +16,8 @@ import MarcaDetail from "./src/Pages/CamisasFutebol/Marca/MarcaDetail.tsx";
 import Masculino from "./src/Pages/CamisasFutebol/Masculino.tsx";
 import Feminino from "./src/Pages/CamisasFutebol/Feminino.tsx";
 import Infantil from "./src/Pages/CamisasFutebol/Infantil.tsx";
+import RealMadrid from "./src/Pages/CamisasFutebol/RealMadrid.tsx";
+import Borussia from "./src/Pages/CamisasFutebol/Borussia.tsx";
 
 const RoutesComponent: React.FC = () => {
   return (
@@ -38,6 +40,8 @@ const RoutesComponent: React.FC = () => {
         <Route path="/masculino" element={<Masculino />} />
         <Route path="/feminino" element={<Feminino />} />
         <Route path="/infantil" element={<Infantil />} />
+        <Route path="/RealMadrid" element={<RealMadrid />} />
+        <Route path="/Borussia Dortmund" element={<Borussia />} />
       </Routes>
     </BrowserRouter>
   );

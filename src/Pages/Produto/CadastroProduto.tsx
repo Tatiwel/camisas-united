@@ -25,8 +25,8 @@ console.log('Dados do Produto:', formData);
 };
 
 return (
-<div className="min-h-screen flex items-center justify-center bg-gray-100 p-5">
-    <div className="bg-white p-8 rounded shadow-md w-full max-w-md">
+<div className="min-h-screen flex items-center justify-center bg-gray-700 p-5">
+    <div className="bg-gray-100 p-8 rounded shadow-md w-full max-w-md">
     <h2 className="text-2xl font-bold mb-6 text-center">Cadastro de Produto</h2>
     <form onSubmit={handleSubmit}>
         
@@ -90,7 +90,7 @@ return (
             className="w-full px-3 py-2 border rounded"
         />
         </div>
-        <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">
+        <button type="submit" className="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded ">
         Cadastrar
         </button>
     </form>
